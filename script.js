@@ -1,5 +1,7 @@
 // Dark Mode Toggle
 const themeToggle = document.getElementById('themeToggle');
+const menuToggle = document.getElementById('menuToggle');
+const mainMenu = document.getElementById('mainMenu');
 const html = document.documentElement;
 
 // Check for saved theme preference or default to light mode
@@ -41,6 +43,13 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', newTheme);
     updateThemeIcon(newTheme);
 });
+
+if (menuToggle && mainMenu) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = mainMenu.classList.toggle('is-open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+}
 
 // Progress Bar
 const progressBar = document.getElementById('progressBar');
@@ -94,6 +103,10 @@ function initNavigation() {
             e.preventDefault();
             const sectionId = this.getAttribute('href');
             showSection(sectionId);
+            if (menuToggle && mainMenu) {
+                mainMenu.classList.remove('is-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
         });
     });
     
