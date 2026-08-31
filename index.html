@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angela Lopez - Data & Social Scientist focused on understanding and communicating social and economic inequalities">
+    <title>Jose Pajuelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Image Zoom -->
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header>
+        <nav>
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-title-section">
+                        <h1>José Pajuelo</h1>
+                        <div class="header-separator"></div>
+                        <span class="portfolio-text" data-i18n="portfolio_text">Portfolio</span>
+                    </div>
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="#about" class="active" data-i18n="nav_about">ABOUT</a></li>
+                        <li><a href="#projects" data-i18n="nav_projects">PROJECTS</a></li>
+                        <li><a href="#publications" data-i18n="nav_publications">TRABAJO PÚBLICO</a></li>
+                        <li><a href="#cv" data-i18n="nav_cv">CV</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">CONTACT</a></li>
+                        <li><button id="langToggle" class="lang-toggle" aria-label="Switch language">EN</button></li>
+                        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section" style="display: block;">
+            <div class="container">
+                <div class="about-content">
+                    <div class="profile">
+                        <img src="assets/img/profile.JPG" alt="Angela Lopez" class="profile-img zoom-image">
+                    </div>
+                    <div class="bio">
+                        <h2 class="name-title" data-i18n="about_title">About me</h2>
+                        <a href="https://github.com/JosePT16" target="_blank" class="github-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>JosePT16</span>
+                        </a>
+                        <p data-i18n="bio_p1">Economist and developer with a strong quantitative background, specialized in analytics, information processing, and applied artificial intelligence.</p>
+                        <p data-i18n="bio_p2">I design solutions to transform data and loosely structured information, including documents, PDFs, text, and administrative records, into analysis, indicators, digital products, and decision-making tools. My experience combines statistical methods, document processing, automation, and software development with knowledge of public policy and how state institutions operate.</p>
+                        <div class="expertise-block">
+                            <h3 data-i18n="expertise_title">Areas of Expertise</h3>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag expertise-tag-primary" data-i18n="expertise_ai">Applied AI</span>
+                                <span class="expertise-tag expertise-tag-secondary" data-i18n="expertise_data">Data Analytics</span>
+                                <span class="expertise-tag expertise-tag-accent" data-i18n="expertise_docs">Document Processing</span>
+                                <span class="expertise-tag expertise-tag-soft" data-i18n="expertise_products">Digital Products</span>
+                                <span class="expertise-tag expertise-tag-warm" data-i18n="expertise_policy">Public Policy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Selected Work within About -->
+                <div class="selected-work-divider"></div>
+                <h3 class="selected-work-title" data-i18n="selected_work">Selected Work</h3>
+                
+                <div class="selected-work-grid">
+                    <!-- Featured Project 0: EduAccess LAC -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/open_peru.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_eduaccess_t">Open Perú: Plataforma de acceso a información legislativa</h4>
+                            <p data-i18n="proj_eduaccess_d">Plataforma civic-tech orientada a facilitar el acceso y análisis de información pública del Congreso peruano. Integra datos sobre proyectos de ley, votaciones y congresistas mediante procesos automatizados de extracción y transformación de documentos. El proyecto combina procesamiento documental, bases de datos, desarrollo web y visualización para convertir información dispersa en datos accesibles y reutilizables.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Web Scraping</span>
+                                <span class="tag institution-tag">OCR</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Flask</span>
+                            </div>
+                            <a href="https://opencongress.civic.garden/" target="_blank" class="project-link" data-i18n="link_platform">View Platform →</a>
+                        </div>
+                    </div>
+
+                    <!-- Featured Project 2: Statistical Analysis -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Dashboard_APEC.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_location_t">Dashboard de analisis de comercio exterior y simulador de aranceles de EEUU.</h4>
+                            <p data-i18n="proj_location_d">Dashboard interactivo para analizar los patrones de comercio internacional de Estados Unidos e identificar industrias potencialmente vulnerables ante aumentos de aranceles o conflictos comerciales. Integra datos de comercio, producción y elasticidades para explorar importaciones y exportaciones por país y producto, además de simular los posibles efectos de cambios arancelarios sobre el bienestar económico.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Data Analysis</span>
+                                <span class="tag institution-tag">Simulation</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Dash</span>
+                            </div>
+                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-asia-pacific-enthusiastic-coding-apec" target="_blank" class="project-link" data-i18n="link_github_repo">Repositorio GitHub →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 3: Poverty Predictor -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/ArtRoom.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_poverty_t">ArtRoom-AI: Aplicativo web con chatbot y generación de imagenes a través de IA.</h4>
+                            <p data-i18n="proj_poverty_d">Aplicación experimental que explora el uso de inteligencia artificial generativa para aprender e interactuar con arte. Integra un chatbot RAG sobre artistas, generación y edición de imágenes mediante modelos de difusión y un modelo ajustado con obras de Pancho Fierro. El proyecto combina LLMs, embeddings, búsqueda vectorial y generación multimodal en una experiencia web interactiva.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">RAG</span>
+                                <span class="tag institution-tag">Image Generation</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Flask</span>
+                            </div>
+                            <a href="https://art-room-ai.vercel.app/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 1: Panama Life Cycle -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/video/ayllu.jpeg" alt="Ayllu Horizons" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_panama_t">Ayllu Horizons: Plataforma Edtech de orientacion vocacional con IA</h4>
+                            <p data-i18n="proj_panama_d">EdTech de orientación vocacional diseñada para ayudar a estudiantes a tomar decisiones educativas más informadas. La plataforma combina evaluaciones de intereses, exploración de carreras, información sobre retornos y costos educativos, y herramientas de reflexión. El proyecto integra diseño de producto, analítica e inteligencia artificial y actualmente se encuentra en desarrollo y validación mediante pilotos educativos.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">AI</span>
+                                <span class="tag institution-tag">Product Design</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">HTML</span>
+                            </div>
+                            <a href="https://aylluhorizons.org/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 4: Chicago Education -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Democracy_Paradox.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_chicago_t">Democracy Paradox: Articulo con graficos interactivos sobre la relacion de democracia y crecimiento</h4>
+                            <p data-i18n="proj_chicago_d">Artículo web interactivo que explora la relación entre democracia, crecimiento económico y retroceso democrático a partir del trabajo de Acemoglu y Robinson. Combina evidencia económica con visualizaciones estáticas, gráficos interactivos y mapas animados para mostrar cómo desigualdad, represión y dinámicas regionales pueden influir en los procesos de democratización y autocratización.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Data Visualization</span>
+                                <span class="tag institution-tag">Storytelling</span>
+                                <span class="tag tool-tag">HTML</span>
+                                <span class="tag tool-tag">JavaScript</span>
+                            </div>
+                            <a href="https://josept16.github.io/Democracy_Paradox/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Project 5: OECD Geographic Inequalities -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/video/ML.jpg" alt="Predicción de recesiones con ML" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_oecd_t">Predicción de recesiones con ML</h4>
+                            <p data-i18n="proj_oecd_d">Proyecto de machine learning para identificar y anticipar episodios de crisis bancarias utilizando indicadores macroeconómicos de Estados Unidos desde 1953. Se construyeron modelos de regresión logística regularizada y redes neuronales utilizando variables de FRED, incluyendo inflación, tasas de interés, bonos y actividad económica, evaluando su capacidad para detectar eventos relativamente infrecuentes.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Machine Learning</span>
+                                <span class="tag institution-tag">Forecasting</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publications Preview within About -->
+                <div class="selected-work-divider"></div>
+                <h3 class="selected-work-title" data-i18n="selected_pubs">Trabajo público</h3>
+                
+                <div class="publications-list publications-preview">
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/iccr.png" alt="Índice Compuesto de Competitividad Regional">
+                        </div>
+                        <div class="pub-details">
+                            <h4 data-i18n="pub_iccr_t">Índice Compuesto de Competitividad Regional</h4>
+                            <p class="pub-authors" data-i18n="pub_cnc_org">Consejo Nacional de Competitividad y Formalización</p>
+                            <p class="pub-journal" data-i18n="pub_iccr_preview_d">Índice compuesto para medir competitividad regional. Participación en análisis, construcción metodológica y comunicación de resultados.</p>
+                            <div class="pub-buttons">
+                                <a href="https://www.cnc.gob.pe/images/cnc/iccr/Metodologia_ICCR_2025.pdf" target="_blank" class="pub-btn" data-i18n="pub_btn_pdf">PDF</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2021</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/ayni.png" alt="AYNI MEF">
+                        </div>
+                        <div class="pub-details">
+                            <h4 data-i18n="pub_ayni_t">AYNI MEF</h4>
+                            <p class="pub-authors" data-i18n="pub_mef_org">Ministerio de Economía y Finanzas del Perú</p>
+                            <p class="pub-journal" data-i18n="pub_ayni_preview_d">Participación en la primera versión: diseño conceptual, coordinación con desarrolladores, estructura de base de datos y definición del sistema de llenado y reporting.</p>
+                            <div class="pub-buttons">
+                                <a href="https://yachay.mef.gob.pe/ayni/Nacional/home" target="_blank" class="pub-btn" data-i18n="pub_btn_dashboard">Dashboard</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2020</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/pncp.png" alt="Plan Nacional de Competitividad y Productividad">
+                        </div>
+                        <div class="pub-details">
+                            <h4 data-i18n="pub_pncp_t">Plan Nacional de Competitividad y Productividad</h4>
+                            <p class="pub-authors" data-i18n="pub_mef_org">Ministerio de Economía y Finanzas del Perú</p>
+                            <p class="pub-journal" data-i18n="pub_pncp_preview_d">Contribución en gráficos, análisis y redacción para comunicar medidas de política pública y seguimiento de competitividad.</p>
+                            <div class="pub-buttons">
+                                <a href="https://www.mef.gob.pe/index.php?option=com_content&view=article&id=6081&Itemid=100674&lang=es&language=es-ES" target="_blank" class="pub-btn" data-i18n="pub_btn_web">Web</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2019</div>
+                    </div>
+                </div>
+                
+                <!--
+                <div class="view-all-publications">
+                    <a href="#publications" class="view-all-link" data-i18n="view_all_pubs">Ver todo el trabajo público →</a>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section" style="display: none;">
+            <div class="container">
+                <h2 data-i18n="projects_h2">Projects</h2>
+                <div class="selected-work-grid">
+                    <!-- Project 0: EduAccess LAC -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/open_peru.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_eduaccess_t">Open Perú: Plataforma de acceso a información legislativa</h4>
+                            <p data-i18n="proj_eduaccess_d">Plataforma civic-tech orientada a facilitar el acceso y análisis de información pública del Congreso peruano. Integra datos sobre proyectos de ley, votaciones y congresistas mediante procesos automatizados de extracción y transformación de documentos. El proyecto combina procesamiento documental, bases de datos, desarrollo web y visualización para convertir información dispersa en datos accesibles y reutilizables.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Web Scraping</span>
+                                <span class="tag institution-tag">OCR</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Flask</span>
+                            </div>
+                            <a href="https://opencongress.civic.garden/" target="_blank" class="project-link" data-i18n="link_platform">View Platform →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Location Matters -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Dashboard_APEC.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_location_t">Dashboard de analisis de comercio exterior y simulador de aranceles de EEUU.</h4>
+                            <p data-i18n="proj_location_d">Dashboard interactivo para analizar los patrones de comercio internacional de Estados Unidos e identificar industrias potencialmente vulnerables ante aumentos de aranceles o conflictos comerciales. Integra datos de comercio, producción y elasticidades para explorar importaciones y exportaciones por país y producto, además de simular los posibles efectos de cambios arancelarios sobre el bienestar económico.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Data Analysis</span>
+                                <span class="tag institution-tag">Simulation</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Dash</span>
+                            </div>
+                            <a href="https://github.com/uchicago-2025-capp30122/30122-project-asia-pacific-enthusiastic-coding-apec" target="_blank" class="project-link" data-i18n="link_github_repo">Repositorio GitHub →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Poverty Classification -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/ArtRoom.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_poverty_t">ArtRoom-AI: Aplicativo web con chatbot y generación de imagenes a través de IA.</h4>
+                            <p data-i18n="proj_poverty_d">Aplicación experimental que explora el uso de inteligencia artificial generativa para aprender e interactuar con arte. Integra un chatbot RAG sobre artistas, generación y edición de imágenes mediante modelos de difusión y un modelo ajustado con obras de Pancho Fierro. El proyecto combina LLMs, embeddings, búsqueda vectorial y generación multimodal en una experiencia web interactiva.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">RAG</span>
+                                <span class="tag institution-tag">Image Generation</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">Flask</span>
+                            </div>
+                            <a href="https://art-room-ai.vercel.app/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 1: Panama Life Cycle -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/video/ayllu.jpeg" alt="Ayllu Horizons" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_panama_t">Ayllu Horizons: Plataforma Edtech de orientacion vocacional con IA</h4>
+                            <p data-i18n="proj_panama_d">EdTech de orientación vocacional diseñada para ayudar a estudiantes a tomar decisiones educativas más informadas. La plataforma combina evaluaciones de intereses, exploración de carreras, información sobre retornos y costos educativos, y herramientas de reflexión. El proyecto integra diseño de producto, analítica e inteligencia artificial y actualmente se encuentra en desarrollo y validación mediante pilotos educativos.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">AI</span>
+                                <span class="tag institution-tag">Product Design</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">HTML</span>
+                            </div>
+                            <a href="https://aylluhorizons.org/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: Chicago Education -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/video/Democracy_Paradox.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_chicago_t">Democracy Paradox: Articulo con graficos interactivos sobre la relacion de democracia y crecimiento</h4>
+                            <p data-i18n="proj_chicago_d">Artículo web interactivo que explora la relación entre democracia, crecimiento económico y retroceso democrático a partir del trabajo de Acemoglu y Robinson. Combina evidencia económica con visualizaciones estáticas, gráficos interactivos y mapas animados para mostrar cómo desigualdad, represión y dinámicas regionales pueden influir en los procesos de democratización y autocratización.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Data Visualization</span>
+                                <span class="tag institution-tag">Storytelling</span>
+                                <span class="tag tool-tag">HTML</span>
+                                <span class="tag tool-tag">JavaScript</span>
+                            </div>
+                            <a href="https://josept16.github.io/Democracy_Paradox/" target="_blank" class="project-link" data-i18n="link_project">View Project →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Recession Prediction -->
+                    <div class="featured-project">
+                        <div class="featured-project-image">
+                            <img src="assets/video/ML.jpg" alt="Predicción de recesiones con ML" class="zoom-image">
+                        </div>
+                        <div class="featured-project-content">
+                            <h4 data-i18n="proj_oecd_t">Predicción de recesiones con ML</h4>
+                            <p data-i18n="proj_oecd_d">Proyecto de machine learning para identificar y anticipar episodios de crisis bancarias utilizando indicadores macroeconómicos de Estados Unidos desde 1953. Se construyeron modelos de regresión logística regularizada y redes neuronales utilizando variables de FRED, incluyendo inflación, tasas de interés, bonos y actividad económica, evaluando su capacidad para detectar eventos relativamente infrecuentes.</p>
+                            <div class="tags">
+                                <span class="tag institution-tag">Machine Learning</span>
+                                <span class="tag institution-tag">Forecasting</span>
+                                <span class="tag tool-tag">Python</span>
+                                <span class="tag tool-tag">scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section publications-section" style="display: none;">
+            <div class="container">
+                <h2 data-i18n="publications_h2">Trabajo público</h2>
+
+                <h3 class="publication-category" data-i18n="cat_briefs">Productos públicos y contribuciones</h3>
+                <div class="publications-list">
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/iccr.png" alt="Índice Compuesto de Competitividad Regional">
+                        </div>
+                        <div class="pub-details">
+                            <h4 data-i18n="pub_iccr_t">Índice Compuesto de Competitividad Regional</h4>
+                            <p class="pub-authors" data-i18n="pub_cnc_org">Consejo Nacional de Competitividad y Formalización</p>
+                            <p class="pub-journal" data-i18n="pub_iccr_d">Herramienta metodológica para medir y comparar la competitividad regional en el Perú. El trabajo organiza indicadores territoriales en dimensiones comparables y facilita el seguimiento de brechas regionales, prioridades de política y resultados institucionales.</p>
+                            <p class="pub-journal" data-i18n="pub_iccr_role">Participación: apoyo en análisis, construcción metodológica y comunicación de resultados.</p>
+                            <div class="pub-buttons">
+                                <a href="https://www.cnc.gob.pe/images/cnc/iccr/Metodologia_ICCR_2025.pdf" target="_blank" class="pub-btn" data-i18n="pub_btn_pdf">PDF</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2021</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/ayni.png" alt="AYNI MEF">
+                        </div>
+                        <div class="pub-details">
+                            <h4 data-i18n="pub_ayni_t">AYNI MEF</h4>
+                            <p class="pub-authors" data-i18n="pub_mef_org">Ministerio de Economía y Finanzas del Perú</p>
+                            <p class="pub-journal" data-i18n="pub_ayni_d">Dashboard web de seguimiento del Plan Nacional de Competitividad y Productividad. Permite visualizar objetivos, entidades, medidas, hitos, avances y reportes asociados al proceso de implementación de la política.</p>
+                            <p class="pub-journal" data-i18n="pub_ayni_role">Participación en la primera versión: diseño conceptual de la experiencia, coordinación con desarrolladores, revisión de la estructura de base de datos y definición del flujo de llenado y reporting.</p>
+                            <div class="pub-buttons">
+                                <a href="https://yachay.mef.gob.pe/ayni/Nacional/home" target="_blank" class="pub-btn" data-i18n="pub_btn_dashboard">Dashboard</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2020</div>
+                    </div>
+                    
+                    <div class="pub-item">
+                        <div class="pub-thumb">
+                            <img src="assets/img/pncp.png" alt="Plan Nacional de Competitividad y Productividad">
+                        </div>
+                        <div class="pub-details">
+                            <h4 data-i18n="pub_pncp_t">Plan Nacional de Competitividad y Productividad</h4>
+                            <p class="pub-authors" data-i18n="pub_mef_org">Ministerio de Economía y Finanzas del Perú</p>
+                            <p class="pub-journal" data-i18n="pub_pncp_d">Instrumento de política pública para ordenar medidas, metas e hitos orientados a mejorar la competitividad y productividad del país. El producto integra información sectorial, seguimiento de avances y comunicación de resultados para actores públicos.</p>
+                            <p class="pub-journal" data-i18n="pub_pncp_role">Participación: elaboración de gráficos, apoyo en análisis y contribución puntual en redacción.</p>
+                            <div class="pub-buttons">
+                                <a href="https://www.mef.gob.pe/index.php?option=com_content&view=article&id=6081&Itemid=100674&lang=es&language=es-ES" target="_blank" class="pub-btn" data-i18n="pub_btn_web">Web</a>
+                            </div>
+                        </div>
+                        <div class="pub-year">2019</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section cv-section" style="display: none;">
+            <div class="container">
+                <h2 data-i18n="cv_h2">Curriculum Vitae</h2>
+                <p data-i18n="cv_desc">Download my complete CV to learn more about my experience, education, and qualifications.</p>
+                <div class="cv-download">
+                    <a href="CV/Resume-Jose-Pajuelo-Software-Engineer-Product-Owner.pdf" download="Resume-Jose-Pajuelo-Software-Engineer-Product-Owner.pdf" class="cv-download-btn" id="cvDownload">
+                        <span class="cv-icon">📄</span>
+                        <span data-i18n="cv_btn">Download CV (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section" style="display: none;">
+            <div class="container">
+                <h2 data-i18n="contact_h2">Contact</h2>
+                <p data-i18n="contact_desc">Feel free to reach out via email or GitHub.</p>
+                <div class="social-links">
+                    <a href="mailto:josepajuelotr@outlook.com" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span data-i18n="contact_email">Email</span>
+                    </a>
+                    <a href="https://github.com/JosePT16" class="social-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle; margin-right: 0.5rem;">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Fallback: Ensure sections work
+        (function() {
+            // Show about section immediately
+            var aboutSection = document.getElementById('about');
+            if (aboutSection) {
+                aboutSection.style.display = 'block';
+            }
+            
+            // Function to show a section
+            function showSection(targetId) {
+                var navLinks = document.querySelectorAll('nav a[href^="#"]');
+                
+                // Hide all sections
+                document.querySelectorAll('.section').forEach(function(section) {
+                    section.classList.remove('active');
+                    section.style.display = 'none';
+                });
+                
+                // Show target section
+                var targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                    targetSection.style.display = 'block';
+                }
+                
+                // Update active nav link
+                navLinks.forEach(function(l) { l.classList.remove('active'); });
+                var activeNavLink = document.querySelector('nav a[href="' + targetId + '"]');
+                if (activeNavLink) {
+                    activeNavLink.classList.add('active');
+                }
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            
+            // Handle clicks on navigation
+            var navLinks = document.querySelectorAll('nav a[href^="#"]');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    showSection(targetId);
+                });
+            });
+            
+            // Handle "View All" links (like View All Publications)
+            var viewAllLinks = document.querySelectorAll('.view-all-link[href^="#"]');
+            viewAllLinks.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var targetId = this.getAttribute('href');
+                    showSection(targetId);
+                });
+            });
+        })();
+    </script>
+    <!-- Language toggle (EN/ES) -->
+    <script>
+        (function() {
+            var EN = {
+                portfolio_text: "Portfolio",
+                nav_about: "ABOUT",
+                nav_projects: "PROJECTS",
+                nav_publications: "PUBLIC WORK",
+                nav_cv: "CV",
+                nav_contact: "CONTACT",
+                about_title: "About me",
+                bio_p1: "Economist and developer with a master's degree from the University of Chicago. Strong quantitative background, specialized in analytics, information processing, and applied artificial intelligence.",
+                bio_p2: "I design solutions that transform data and loosely structured information, including documents, PDFs, text, and administrative records, into analysis, indicators, digital products, and decision-making tools. My experience combines statistical methods, document processing, automation, and software development with knowledge of public policy and how government institutions operate.",
+                expertise_title: "Areas of Expertise",
+                expertise_ai: "Applied AI",
+                expertise_data: "Data Analytics",
+                expertise_docs: "Document Processing",
+                expertise_products: "Digital Products",
+                expertise_policy: "Public Policy",
+                selected_work: "Projects",
+                selected_pubs: "Public work",
+                proj_eduaccess_t: "Open Peru: Platform for access to legislative information",
+                proj_eduaccess_d: "Civic-tech platform designed to facilitate access to and analysis of public information from the Peruvian Congress. It integrates data on bills, votes, and members of Congress through automated document extraction and transformation processes. The project combines document processing, databases, web development, and visualization to turn dispersed information into accessible and reusable data.",
+                proj_panama_t: "Ayllu Horizons: AI-powered edtech platform for vocational guidance",
+                proj_panama_d: "Vocational guidance edtech platform designed to help students make more informed educational decisions. The platform combines interest assessments, career exploration, information on educational returns and costs, and reflection tools. The project integrates product design, analytics, and artificial intelligence, and is currently under development and validation through educational pilots.",
+                proj_location_t: "Foreign trade analytics dashboard and U.S. tariff simulator",
+                proj_location_d: "Interactive dashboard for analyzing U.S. international trade patterns and identifying industries potentially vulnerable to tariff increases or trade conflicts. It integrates trade, production, and elasticity data to explore imports and exports by country and product, and to simulate the potential welfare effects of tariff changes.",
+                proj_poverty_t: "ArtRoom-AI: Web app with chatbot and AI image generation",
+                proj_poverty_d: "Experimental application exploring the use of generative artificial intelligence to learn about and interact with art. It integrates a RAG chatbot about artists, image generation and editing through diffusion models, and a model fine-tuned on works by Pancho Fierro. The project combines LLMs, embeddings, vector search, and multimodal generation in an interactive web experience.",
+                proj_chicago_t: "Democracy Paradox: Interactive article on democracy and growth",
+                proj_chicago_d: "Interactive web article exploring the relationship between democracy, economic growth, and democratic backsliding based on the work of Acemoglu and Robinson. It combines economic evidence with static visualizations, interactive charts, and animated maps to show how inequality, repression, and regional dynamics can influence democratization and autocratization processes.",
+                proj_oecd_t: "Recession prediction with ML",
+                proj_oecd_d: "Machine learning project to identify and anticipate banking crisis episodes using U.S. macroeconomic indicators since 1953. Regularized logistic regression models and neural networks were built using FRED variables, including inflation, interest rates, bonds, and economic activity, evaluating their ability to detect relatively infrequent events.",
+                link_platform: "View platform →",
+                link_project: "View project →",
+                link_github_repo: "GitHub repository →",
+                link_repo: "View repository →",
+                link_report: "View report →",
+                note_private: "Private repository, request access",
+                view_all_pubs: "View all public work →",
+                projects_h2: "Projects",
+                publications_h2: "Public work",
+                cat_briefs: "Public products and contributions",
+                cat_articles: "Public products",
+                pub_iccr_t: "Composite Regional Competitiveness Index",
+                pub_cnc_org: "National Council for Competitiveness and Formalization",
+                pub_iccr_preview_d: "Composite index to measure regional competitiveness. Contribution to analysis, methodological construction, and communication of results.",
+                pub_iccr_d: "Methodological tool to measure and compare regional competitiveness in Peru. The work organizes territorial indicators into comparable dimensions and supports the monitoring of regional gaps, policy priorities, and institutional results.",
+                pub_iccr_role: "Role: support in analysis, methodological construction, and communication of results.",
+                pub_pncp_t: "National Competitiveness and Productivity Plan",
+                pub_mef_org: "Ministry of Economy and Finance of Peru",
+                pub_pncp_preview_d: "Contribution to charts, analysis, and writing to communicate public policy measures and competitiveness monitoring.",
+                pub_pncp_d: "Public policy instrument to organize measures, targets, and milestones aimed at improving the country's competitiveness and productivity. The product integrates sector information, progress monitoring, and communication of results for public-sector stakeholders.",
+                pub_pncp_role: "Role: development of charts, support in analysis, and targeted writing contributions.",
+                pub_ayni_t: "AYNI MEF",
+                pub_ayni_preview_d: "Participation in the first version: conceptual design, coordination with developers, database structure, and definition of the data entry and reporting system.",
+                pub_ayni_d: "Web dashboard for monitoring the National Competitiveness and Productivity Plan. It allows users to visualize objectives, entities, measures, milestones, progress, and reports associated with the policy implementation process.",
+                pub_ayni_role: "Role in the first version: conceptual experience design, coordination with developers, review of the database structure, and definition of the data entry and reporting flow.",
+                pub_btn_pdf: "PDF",
+                pub_btn_web: "Web",
+                pub_btn_dashboard: "Dashboard",
+                cv_h2: "Curriculum Vitae",
+                cv_desc: "Download my complete CV to learn more about my experience, education, and qualifications.",
+                cv_btn: "Download CV (PDF)",
+                contact_h2: "Contact",
+                contact_desc: "Feel free to reach out via email or GitHub.",
+                contact_email: "Email",
+                tag_edupolicy: "Education Policy",
+                tag_ai: "AI Assistant",
+                tag_dataviz: "Data Visualization",
+                tag_panama: "Panama",
+                tag_stats: "Statistics",
+                tag_policyanalysis: "Policy Analysis",
+                tag_ml: "Machine Learning",
+                tag_poverty: "Poverty"
+            };
+
+            var ES = {
+                portfolio_text: "Portafolio",
+                nav_about: "SOBRE MÍ",
+                nav_projects: "PROYECTOS",
+                nav_publications: "TRABAJO PÚBLICO",
+                nav_cv: "CV",
+                nav_contact: "CONTACTO",
+                about_title: "Sobre mí",
+                bio_p1: "Economista y desarrollador con Maestría en la Universidad de Chicago. Sólida formación cuantitativa, especializado en analítica, procesamiento de información e inteligencia artificial aplicada.",
+                bio_p2: "Diseño soluciones para transformar datos e información poco estructurada (documentos, PDFs, textos y registros administrativos) en análisis, indicadores, productos digitales y herramientas para la toma de decisiones. Mi experiencia combina métodos estadísticos, procesamiento documental, automatización y desarrollo de software con conocimiento de políticas públicas y del funcionamiento de las instituciones del Estado.",
+                expertise_title: "Áreas de especialidad",
+                expertise_ai: "IA aplicada",
+                expertise_data: "Analítica de datos",
+                expertise_docs: "Procesamiento documental",
+                expertise_products: "Productos digitales",
+                expertise_policy: "Políticas públicas",
+                selected_work: "Proyectos",
+                selected_pubs: "Trabajo público",
+                proj_eduaccess_t: "Open Perú: Plataforma de acceso a información legislativa",
+                proj_eduaccess_d: "Plataforma civic-tech orientada a facilitar el acceso y análisis de información pública del Congreso peruano. Integra datos sobre proyectos de ley, votaciones y congresistas mediante procesos automatizados de extracción y transformación de documentos. El proyecto combina procesamiento documental, bases de datos, desarrollo web y visualización para convertir información dispersa en datos accesibles y reutilizables.",
+                proj_panama_t: "Ayllu Horizons: Plataforma Edtech de orientacion vocacional con IA",
+                proj_panama_d: "EdTech de orientación vocacional diseñada para ayudar a estudiantes a tomar decisiones educativas más informadas. La plataforma combina evaluaciones de intereses, exploración de carreras, información sobre retornos y costos educativos, y herramientas de reflexión. El proyecto integra diseño de producto, analítica e inteligencia artificial y actualmente se encuentra en desarrollo y validación mediante pilotos educativos.",
+                proj_location_t: "Dashboard de analisis de comercio exterior y simulador de aranceles de EEUU.",
+                proj_location_d: "Dashboard interactivo para analizar los patrones de comercio internacional de Estados Unidos e identificar industrias potencialmente vulnerables ante aumentos de aranceles o conflictos comerciales. Integra datos de comercio, producción y elasticidades para explorar importaciones y exportaciones por país y producto, además de simular los posibles efectos de cambios arancelarios sobre el bienestar económico.",
+                proj_poverty_t: "ArtRoom-AI: Aplicativo web con chatbot y generación de imagenes a través de IA.",
+                proj_poverty_d: "Aplicación experimental que explora el uso de inteligencia artificial generativa para aprender e interactuar con arte. Integra un chatbot RAG sobre artistas, generación y edición de imágenes mediante modelos de difusión y un modelo ajustado con obras de Pancho Fierro. El proyecto combina LLMs, embeddings, búsqueda vectorial y generación multimodal en una experiencia web interactiva.",
+                proj_chicago_t: "Democracy Paradox: Articulo con graficos interactivos sobre la relacion de democracia y crecimiento",
+                proj_chicago_d: "Artículo web interactivo que explora la relación entre democracia, crecimiento económico y retroceso democrático a partir del trabajo de Acemoglu y Robinson. Combina evidencia económica con visualizaciones estáticas, gráficos interactivos y mapas animados para mostrar cómo desigualdad, represión y dinámicas regionales pueden influir en los procesos de democratización y autocratización.",
+                proj_oecd_t: "Predicción de recesiones con ML",
+                proj_oecd_d: "Proyecto de machine learning para identificar y anticipar episodios de crisis bancarias utilizando indicadores macroeconómicos de Estados Unidos desde 1953. Se construyeron modelos de regresión logística regularizada y redes neuronales utilizando variables de FRED, incluyendo inflación, tasas de interés, bonos y actividad económica, evaluando su capacidad para detectar eventos relativamente infrecuentes.",
+                link_platform: "Ver plataforma →",
+                link_project: "Ver proyecto →",
+                link_github_repo: "Repositorio GitHub →",
+                link_repo: "Ver repositorio →",
+                link_report: "Ver informe →",
+                note_private: "Repositorio privado, solicitar acceso",
+                view_all_pubs: "Ver todo el trabajo público →",
+                projects_h2: "Proyectos",
+                publications_h2: "Trabajo público",
+                cat_briefs: "Productos públicos y contribuciones",
+                cat_articles: "Productos públicos",
+                cv_h2: "Hoja de Vida",
+                cv_desc: "Descarga mi hoja de vida completa para conocer más sobre mi experiencia, formación y cualificaciones.",
+                cv_btn: "Descargar CV (PDF)",
+                contact_h2: "Contacto",
+                contact_desc: "No dudes en escribirme por correo o GitHub.",
+                contact_email: "Correo",
+                pub_iccr_t: "Índice Compuesto de Competitividad Regional",
+                pub_cnc_org: "Consejo Nacional de Competitividad y Formalización",
+                pub_iccr_preview_d: "Índice compuesto para medir competitividad regional. Participación en análisis, construcción metodológica y comunicación de resultados.",
+                pub_iccr_d: "Herramienta metodológica para medir y comparar la competitividad regional en el Perú. El trabajo organiza indicadores territoriales en dimensiones comparables y facilita el seguimiento de brechas regionales, prioridades de política y resultados institucionales.",
+                pub_iccr_role: "Participación: apoyo en análisis, construcción metodológica y comunicación de resultados.",
+                pub_pncp_t: "Plan Nacional de Competitividad y Productividad",
+                pub_mef_org: "Ministerio de Economía y Finanzas del Perú",
+                pub_pncp_preview_d: "Contribución en gráficos, análisis y redacción para comunicar medidas de política pública y seguimiento de competitividad.",
+                pub_pncp_d: "Instrumento de política pública para ordenar medidas, metas e hitos orientados a mejorar la competitividad y productividad del país. El producto integra información sectorial, seguimiento de avances y comunicación de resultados para actores públicos.",
+                pub_pncp_role: "Participación: elaboración de gráficos, apoyo en análisis y contribución puntual en redacción.",
+                pub_ayni_t: "AYNI MEF",
+                pub_ayni_preview_d: "Participación en la primera versión: diseño conceptual, coordinación con desarrolladores, estructura de base de datos y definición del sistema de llenado y reporting.",
+                pub_ayni_d: "Dashboard web de seguimiento del Plan Nacional de Competitividad y Productividad. Permite visualizar objetivos, entidades, medidas, hitos, avances y reportes asociados al proceso de implementación de la política.",
+                pub_ayni_role: "Participación en la primera versión: diseño conceptual de la experiencia, coordinación con desarrolladores, revisión de la estructura de base de datos y definición del flujo de llenado y reporting.",
+                pub_btn_pdf: "PDF",
+                pub_btn_web: "Web",
+                pub_btn_dashboard: "Dashboard",
+                tag_edupolicy: "Política educativa",
+                tag_ai: "Asistente IA",
+                tag_dataviz: "Visualización de datos",
+                tag_panama: "Panamá",
+                tag_stats: "Estadística",
+                tag_policyanalysis: "Análisis de políticas",
+                tag_ml: "Aprendizaje automático",
+                tag_poverty: "Pobreza"
+            };
+
+            var CV = {
+                en: { href: "CV/Resume-Jose-Pajuelo-Software-Engineer-Product-Owner.pdf", download: "Resume-Jose-Pajuelo-Software-Engineer-Product-Owner.pdf" },
+                es: { href: "CV/Cv-Jose-Pajuelo-Digital transformation.pdf", download: "Cv-Jose-Pajuelo-Digital transformation.pdf" }
+            };
+
+            var nodes = document.querySelectorAll('[data-i18n]');
+            // Cache original markup as a fallback for keys without translations.
+            nodes.forEach(function(el) { el.dataset.en = el.innerHTML; });
+
+            function applyLang(lang) {
+                var dict = lang === 'es' ? ES : EN;
+                nodes.forEach(function(el) {
+                    var key = el.getAttribute('data-i18n');
+                    if (dict[key] != null) {
+                        el.innerHTML = dict[key];
+                    } else {
+                        el.innerHTML = el.dataset.en;
+                    }
+                });
+
+                var cv = document.getElementById('cvDownload');
+                if (cv) {
+                    var c = CV[lang] || CV.en;
+                    cv.setAttribute('href', c.href);
+                    cv.setAttribute('download', c.download);
+                }
+
+                document.documentElement.lang = lang;
+                var btn = document.getElementById('langToggle');
+                if (btn) {
+                    // Show the language you can switch TO.
+                    btn.textContent = (lang === 'es') ? 'EN' : 'ES';
+                }
+                try { localStorage.setItem('lang', lang); } catch (e) {}
+            }
+
+            function updateUrl(lang) {
+                try {
+                    var p = new URLSearchParams(window.location.search);
+                    p.set('lang', lang);
+                    var newUrl = window.location.pathname + '?' + p.toString() + window.location.hash;
+                    window.history.replaceState(null, '', newUrl);
+                } catch (e) {}
+            }
+
+            // Language priority on load: URL ?lang= > saved choice > Spanish.
+            var initial = 'es';
+            try {
+                var urlLang = new URLSearchParams(window.location.search).get('lang');
+                if (urlLang === 'es' || urlLang === 'en') {
+                    initial = urlLang;
+                } else {
+                    initial = localStorage.getItem('lang') || 'es';
+                }
+            } catch (e) {}
+            applyLang(initial);
+
+            var toggle = document.getElementById('langToggle');
+            if (toggle) {
+                toggle.addEventListener('click', function() {
+                    var current = document.documentElement.lang === 'es' ? 'es' : 'en';
+                    var next = current === 'es' ? 'en' : 'es';
+                    applyLang(next);
+                    updateUrl(next);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

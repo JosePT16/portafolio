@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# Cache
+.jekyll-cache/
+_site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node (if you add any later)
+node_modules/
